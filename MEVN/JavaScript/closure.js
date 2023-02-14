@@ -17,3 +17,6 @@ function init() // function1-outer/parent
     displayName(); // inner/closure/child function
 }
 init();
+//displayName();- outer function call will not achieve the purpose of closure
+//purpose of closure is to
+//call multiple inner function by just one outer function call
