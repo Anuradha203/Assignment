@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "express": "^4.18.2",
     "http": "^0.0.1-security",
     "math": "^0.0.3",
     "mathematics": "^0.0.4",
