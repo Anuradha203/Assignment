@@ -1,0 +1,9 @@
+Node.js has a single-threaded event loop architecture.
+When Node.js starts, it initializes the event loop and registers several system-level event handlers, such as for incoming network connections, file I/O, and timer events.
+When an I/O operation is initiated, such as a file read or a network request, Node.js registers a callback function with the event loop instead of blocking the thread until the operation completes.
+The event loop then continues to run, checking for any pending I/O operations that have completed and invoking the appropriate callback function to handle the result.
+The event loop has several phases, each representing a different type of task.
+In each phase, the event loop polls for events of that type and executes any callbacks registered for those events.
+Once all callbacks in the current phase have been executed, the event loop advances to the next phase and repeats the process.
+This allows Node.js to handle I/O operations efficiently without blocking the event loop.
+Overall, the event loop is the core of Node.js architecture, allowing it to handle large numbers of simultaneous connections and perform I/O operations efficiently without blocking the thread.
