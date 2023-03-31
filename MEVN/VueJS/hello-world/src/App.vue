@@ -1,6 +1,14 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div>
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
+    <router-link to="/contact">Contact</router-link>
+    <router-view></router-view>
+  </div>
+  
 </template>
 
 <script>
@@ -14,7 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style> 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
